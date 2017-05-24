@@ -1,0 +1,44 @@
+.main__portfolio {
+	display: block;
+	width: 100%;
+}
+
+.main__portfolio_header {
+
+	display: none;
+
+	@media screen and (max-width: 768px) {
+		display: block;
+	}
+
+	&Title{
+		@extend %title;
+	}
+
+	&Discr {
+		@extend %discr;
+	}
+}
+
+.portfolio__slide {
+	width: 360px;
+	display: block;
+	overflow: hidden;
+
+	@media screen and (max-width: 768px) {
+		width: 320px;
+	}
+
+}
+
+.portfolio__slideImg {
+	max-width: 100%;
+	display: block;
+	filter: grayscale(0);
+	/* transition: all .7s; */
+
+	&:hover {
+		filter: grayscale(1);
+	}
+
+}

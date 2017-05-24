@@ -1,0 +1,5 @@
+archive/
+build/
+node_modules/
+src/img/??.jpg
+src/img/?.jpg

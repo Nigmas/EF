@@ -1,0 +1,42 @@
+.about_header {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;	
+
+	.about_headerImg {
+		width: 230px;
+		height: 230px;
+		border-radius: 50%;
+		opacity: .95;
+		margin-top: 50px;
+	}
+
+	.about_headerTitle{
+		@extend %title;
+		margin-top: 50px;
+	}
+
+	.about_headerDiscr {
+		@extend %discr;
+		margin-bottom: 0;
+	}
+
+	@media screen and (max-width: 375px) {
+		.about_headerImg {
+			margin-top: 30px;
+		}
+		.about_headerTitle{
+			margin-top: 20px;
+			font-size: 2.7rem;
+		}		
+	}
+}
+
+.about_body {	
+	@extend %blockPadding;	
+
+	p {
+		@extend %p;
+	}
+}
